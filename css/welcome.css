@@ -1,7 +1,8 @@
 body {
-  background-color: palevioletred;
-  
+      background-color: palevioletred;
       margin:0;
+      font-family: 'Otomanopee One', sans-serif;
+      
   }
   
   .navbar {
