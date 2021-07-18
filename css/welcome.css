@@ -69,5 +69,19 @@ background-color: palevioletred;
   }
   #next
   {
-    text-align: center
+    text-align: center;
+  }
+
+  #submit-button{
+    position:relative;
+    width:max-content;
+    border:2px black solid;
+    border-radius:5px;
+    padding:2px;
+    left:48%;
+    margin-top:20px;
+  }
+
+  #submit-button:hover{
+    box-shadow: 0 0 10px red;
   }

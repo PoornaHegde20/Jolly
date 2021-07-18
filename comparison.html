@@ -48,27 +48,27 @@
     <input type="text" id="q1n1" name="q1n1">
     <input type="text" id="q1n2" name="q1n2">
     <input type="button" id="q1Get" name="q1Get" value="Get Numbers" onclick="comparisonQ()"><br>
-    <input type="text" id="q1g" name="q1g">
-    <input type="text" id="q1l" name="q1l"><br>
-    <input type="submit" id="q1submit" value="Submit" onclick="checkQ()">
+    <input type="text" id="q1l" name="q1l">
+    <input type="text" id="q1g" name="q1g"><br>
+    <div id="submit-button" onclick="checkQ()">Submit</div>
+    <!-- <input type="submit" id="q1submit" value="Submit" onclick="checkQ()"> -->
   </form> 
   <p id="q1result"></p>
   <script>
-    var result=document.getElementById("q1result");
-    var max;
-    if(parseInt(document.getElementById("q1n1").value)>parseInt(document.getElementById("q1n2").value))
-        max.value=parseInt(document.getElementById("q1n1").value);
-    else
-        max.value=parseInt(document.getElementById("q1n2").value);
-    if(parseInt(document.getElementById("q1g").value)==max.value)
-    {
-        result.innerHTML="CORRECT ANSWER! You earn 10 chocolates!";
-        alert("Yes");
-        updateScore();
-    }
-    else
-    {
-        result.innerHTML="Wrong Answer :( It's okay you can try more!!";
+    function checkQ(){
+      var entry1 = document.getElementById("q1l").value;
+      var entry2 = document.getElementById("q1g").value;
+      var result= document.getElementById("q1result");
+      if(entry1>entry2)
+      {
+         result.innerHTML="CORRECT ANSWER! You earn 10 chocolates!";
+      }
+      else
+      {
+         result.innerHTML="Wrong Answer :( It's okay you can try more!!";
+      }
+      return;
+
     }
   </script>
   <br>
