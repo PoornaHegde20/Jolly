@@ -40,8 +40,52 @@ body {
     padding: 16px;
     margin-top: 30px;
     text-align: center;
+    margin: 30px;
   }
-  
+  #q1Get
+  {
+    border:2px black solid;
+    border-radius:5px;
+    padding:2px;
+    left:48%;
+    margin-top:20px;
+    cursor: pointer;
+    font-family: 'Otomanopee One', sans-serif;
+  }
+  #q1Get:hover{
+    box-shadow: 0 0 10px red;
+  }
+  #q2Get
+  {
+    border:2px black solid;
+    border-radius:5px;
+    padding:2px;
+    left:48%;
+    margin-top:20px;
+    cursor: pointer;
+    font-family: 'Otomanopee One', sans-serif;
+  }
+  #q2Get:hover{
+    box-shadow: 0 0 10px red;
+  }
+  #q3Get
+  {
+    border:2px black solid;
+    border-radius:5px;
+    padding:2px;
+    left:48%;
+    margin-top:20px;
+    cursor: pointer;
+    font-family: 'Otomanopee One', sans-serif;
+  }
+  #q3Get:hover{
+    box-shadow: 0 0 10px red;
+  }
+#qh
+{
+  font-size: 30px;
+}
+
   .button {
       border: none;
       color: white;
@@ -130,6 +174,13 @@ body {
     box-shadow: 0 0 10px red;
   }
 
+  #introcomp
+  {
+    font-size: 30px;
+  }
+h2{
+  font-size: 35px;
+}
   #q1
 {
     position:relative;
@@ -193,5 +244,52 @@ body {
     width:30px;
 }
 
+#counti
+{
+  font-size: 30px;
+}
 
-
+#numbers
+{
+  font-size: 30px;
+}
+#number1
+{
+  position:relative;
+  right: 19px;
+}
+#number2
+{
+  position: relative;
+  right: 15px;
+}
+#number4
+{
+  position: relative;
+  right: 10px;
+}
+#number5
+{
+  position: relative;
+  right: 17px;
+}
+#number6
+{
+  position: relative;
+  right: 24px;
+}
+#number8
+{
+  position: relative;
+  right: 3px;
+}
+#number9
+{
+  position: relative;
+  right: 13px;
+}
+#number10
+{
+  position: relative;
+  right: 18px;
+}

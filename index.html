@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="css/welcome.css">
 <script src="js/welcome.js"></script>
 <script src ="jsK/script.js"></script>
-
+<link rel="stylesheet" href="cssK/styles.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
@@ -33,8 +33,9 @@
 <div id="margined">
 
 <div class="main">
-    <h1><big><b>COUNTING</b></big></h1>
-    <p>Let's learn counting from 1 to 10!</p>
+  <div class="container"><h1><b>COUNTING</b></h1></div>
+    
+    <p id="counti">Let's learn counting from 1 to 10!</p>
 </div>
 <div id="numbers">
 <button class="button button2" id="number1" onclick="check1()">1</button>
@@ -58,12 +59,7 @@ NINE<br>
 <button class="button button3" id="number10" onclick="check10()">10</button>
 TEN<br>
 </div>
-<script>
-  function displayScore(){
-    ele.innerHTML=score;
 
-  }
-</script>
 
 <br>
 <br>
