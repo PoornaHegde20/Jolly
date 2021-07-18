@@ -2,7 +2,7 @@ var age;
 var icon;
 var score=0;
 var username="kullu";
-
+var ele=document.getElementById("scoree");
 var count1=1,count2=1,count3=1,count4=1,count5=1,count6=1,count7=1,count8=1,count9=1,count10=1;
 
 var snd1 = new Audio("aud/audio1.ogg");
@@ -128,12 +128,14 @@ function check9() {
 
 function changeColor10(color) {
     document.getElementById('number10').style.backgroundColor = color;
+    
 }
 function check10() {
     snd10.play();
     if(count10==3)
 	{
         changeColor10('chartreuse');
+        
     }
     count10++;
 }	
@@ -185,7 +187,7 @@ function checkQ()
         updateScore();
     }
     else
-    {
+    {   
         result.innerHTML="Wrong Answer :( It's okay you can try more!!";
     }
 }
