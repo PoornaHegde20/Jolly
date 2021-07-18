@@ -93,7 +93,25 @@ h1{
     width:150px;
     height:195px;
     position:absolute;
-    top:30px;
+    top:100px;
     left:30px;
     transform: rotate(-10deg);
+}
+
+#intro{
+    margin:30px;
+    font-size:30px;
+}
+
+#intro span{
+    font-size:130%;
+}
+
+#game-buttons div{
+    border: 2px black solid;
+    width:30%;
+    height:100px;
+    margin-left:10%;
+    margin-right:10%;
+    margin-bottom: 30px;;
 }
