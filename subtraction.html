@@ -34,7 +34,7 @@
         var entry2 = document.getElementById("qs2").value;
         var entry3 = document.getElementById("qs3").value;
         var entry4 = document.getElementById("qs4").value;
-        var result= document.getElementById("result");
+        var results= document.getElementById("results");
         if(q1==3)
         {
             score+=10;
@@ -55,7 +55,7 @@
             score+=10;;
             ele.innerHTML=score;
         }
-        result.innerHTML="The correct answers are 3, 1, 2 and 1!!"
+        results.innerHTML="The correct answers are 3, 1, 2 and 1!!";
   }
   </script>
 </div>
@@ -87,7 +87,7 @@ Enter the sum of the cherries in the box and click submit!!
   <div id="submit-button" onclick="checkS()">Submit</div>
   <!-- <input type="submit" id="q1submit" value="Submit" onclick="checkQ()"> -->
 </form> 
-<p id="result"></p>
+<p id="results"> </p>
 
 
 
