@@ -172,22 +172,3 @@ function comparisonQ(c)
         x.innerHTML="The numbers are " +x.value+" and "+y.value+"!";
     }
 }
-function checkQ()
-{
-    var result=document.getElementById("q1result");
-    var max;
-    if(parseInt(document.getElementById("q1n1").value)>parseInt(document.getElementById("q1n2").value))
-        max.value=parseInt(document.getElementById("q1n1").value);
-    else
-        max.value=parseInt(document.getElementById("q1n2").value);
-        
-    if(document.getElementById("q1g").value==max.value)
-    {
-        result.innerHTML="CORRECT ANSWER! You earn 10 chocolates!";
-        updateScore();
-    }
-    else
-    {   
-        result.innerHTML="Wrong Answer :( It's okay you can try more!!";
-    }
-}
