@@ -14,6 +14,9 @@
     <script src="jsK/bootstrap.min.js"></script>
     <script src="jsK/script.js"></script>
     <script src="jsK/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
 
 
   </head>
@@ -61,19 +64,6 @@
 
     <script>
       document.querySelector('#name').innerHTML = localStorage.getItem("nickname");
-      // document.querySelector('#age').innerHTML = localStorage.getItem("age");
-      // var c = localStorage.getItem("character");
-      // if(c==1)
-      //   document.querySelector('#character').innerHTML = "Yellow!";
-      // else if(c==2)
-      //   document.querySelector('#character').innerHTML = "Blue!";
-      // else if(c==3)
-      //   document.querySelector('#character').innerHTML = "Green!";
-      // else if(c==4)
-      //   document.querySelector('#character').innerHTML = "Grey!";
-      // else if(c==5)
-      //   document.querySelector('#character').innerHTML = "Red!";
-
       var icon = new Image(360,270);
       icon.src = iconChoice();
       document.querySelector("#icon-display").appendChild(icon);
