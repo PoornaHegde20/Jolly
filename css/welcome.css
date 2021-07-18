@@ -71,3 +71,17 @@ background-color: palevioletred;
   {
     text-align: center
   }
+  #q1l
+  {
+    position: relative;
+    bottom: 115px;
+    right: 110px;
+    width: 30px;
+  }
+  #q1g
+  {
+    position: relative;
+    bottom: 185px;
+    left: 90px;
+    width: 30px;
+  }

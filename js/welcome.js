@@ -149,6 +149,8 @@ function comparisonQ()
     var y=document.getElementById("q1n2");
     x.value=Math.ceil(Math.random()*10);
     y.value=Math.ceil(Math.random()*10);
+    x.innerHTML="The numbers are " +x.value+" and "+y.value+"!";
+    // y.innerHTML=y.value;
 }
 function checkQ()
 {
