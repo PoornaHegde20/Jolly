@@ -3,6 +3,7 @@
 <head>
 <meta name="comparison" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/welcome.css">
+<link rel="shortcut icon" href="imagesK/favicon.png" type="image/png">
 <script src="js/welcome.js"></script>
 </head>
 <body>
@@ -36,55 +37,117 @@
   The numbers succeeding it are 6, 7, 8, etc. That means, 5 is lesser than all these numbers! 
   The symbol for lesser than is "<".<br>Eg:5<10, 1<3.
 
-  <p>You'll be higher on the seesaw if you're greater than the other number!!</p>
+  <p>The greater number sits higher on the see-saw!!</p>
   <img src="img/seesaw2.png" height="200" width="200">
   <br>
   <br>
 <p>Do you want to earn more chocolates <img src="img/chocolate3.png" width="30" height="20">? Take this quiz!!</p>
 <br>
 <p>Click on "Get Numbers" and enter these numbers on the seesaw!</p>
+<br>
+Question-1:
+<form name="Comparison Quiz">
+  <u><p id="q1n1" name="q1n1"></p></u>
+  <p id="q1n2" name="q1n2"></p>
+  <input type="button" id="q1Get" name="q1Get" value="Get Numbers" onclick="comparisonQ(1)"><br>
+  <img src="img/playground.png" height="300" width="300"><br>
+  <input type="text" id="q1l" name="q1l">
+  <input type="text" id="q1g" name="q1g"><br>
+  <div id="submit-button" onclick="checkQ(1)">Submit</div>
+  <!-- <input type="submit" id="q1submit" value="Submit" onclick="checkQ()"> -->
+</form> 
+<p id="q1result"></p>
 
-  <form name="Comparison Quiz">
-    <input type="text" id="q1n1" name="q1n1">
-    <input type="text" id="q1n2" name="q1n2">
-    <input type="button" id="q1Get" name="q1Get" value="Get Numbers" onclick="comparisonQ()"><br>
-    <input type="text" id="q1l" name="q1l">
-    <input type="text" id="q1g" name="q1g"><br>
-    <div id="submit-button" onclick="checkQ()">Submit</div>
-    <!-- <input type="submit" id="q1submit" value="Submit" onclick="checkQ()"> -->
-  </form> 
-  <p id="q1result"></p>
-  <script>
-    function checkQ(){
+<br>
+Question-2:
+<form>
+<u><p id="q2n1" name="q2n1"></p></u>
+  <p id="q2n2" name="q2n2"></p>
+  <input type="button" id="q2Get" name="q2Get" value="Get Numbers" onclick="comparisonQ(2)"><br>
+  <img src="img/playground.png" height="300" width="300"><br>
+  <input type="text" id="q2l" name="q2l">
+  <input type="text" id="q2g" name="q2g"><br>
+  <div id="submit-button" onclick="checkQ(2)">Submit</div>
+  <!-- <input type="submit" id="q1submit" value="Submit" onclick="checkQ()"> -->
+</form> 
+<p id="q2result"></p>
+
+<br>
+Question-3
+<form>
+<u><p id="q3n1" name="q3n1"></p></u>
+  <p id="q3n2" name="q3n2"></p>
+  <input type="button" id="q3Get" name="q3Get" value="Get Numbers" onclick="comparisonQ(3)"><br>
+  <img src="img/playground.png" height="300" width="300"><br>
+  <input type="text" id="q3l" name="q3l">
+  <input type="text" id="q3g" name="q3g"><br>
+  <div id="submit-button" onclick="checkQ(3)">Submit</div>
+  <!-- <input type="submit" id="q1submit" value="Submit" onclick="checkQ()"> -->
+</form> 
+<p id="q3result"></p>
+<script>
+  function checkQ(c){
+    if(c==1)
+    {
       var entry1 = document.getElementById("q1l").value;
       var entry2 = document.getElementById("q1g").value;
       var result= document.getElementById("q1result");
       if(entry1<entry2)
       {
-         result.innerHTML="CORRECT ANSWER! You earn 10 chocolates!";
-         updateScore();
-         ele.innerHTML=score;
-
+       result.innerHTML="CORRECT ANSWER! You earn 10 chocolates!";
+       updateScore();
+       ele.innerHTML=score;
       }
       else
       {
-         result.innerHTML="Wrong Answer :( It's okay you can try more!!";
+       result.innerHTML="Wrong Answer :( It's okay you can try more!!";
       }
       return;
     }
-  </script>
-  <br>
-<img src="img/playground.png" height="300" width="300">          
-<img src="img/playground.png" height="300" width="300">            
-<img src="img/playground.png" height="300" width="300">
-
+    else if(c==2)
+    {
+      var entry1 = document.getElementById("q2l").value;
+      var entry2 = document.getElementById("q2g").value;
+      var result= document.getElementById("q2result");
+      if(entry1<entry2)
+      {
+       result.innerHTML="CORRECT ANSWER! You earn 10 chocolates!";
+       updateScore();
+       ele.innerHTML=score;
+      }
+      else
+      {
+       result.innerHTML="Wrong Answer :( It's okay you can try more!!";
+      }
+      return;
+    }
+    else
+    {
+      var entry1 = document.getElementById("q3l").value;
+      var entry2 = document.getElementById("q3g").value;
+      var result= document.getElementById("q3result");
+      if(entry1<entry2)
+      {
+       result.innerHTML="CORRECT ANSWER! You earn 10 chocolates!";
+       updateScore();
+       ele.innerHTML=score;
+      }
+      else
+      {
+       result.innerHTML="Wrong Answer :( It's okay you can try more!!";
+      }
+      return;
+    }
+  }
+</script>
 </div>
 
 <br> <br>
 
-<br>
-<br>
-
+<button onclick="comparison.html">New Game</button>
+<button onclick="indexk.html">Quit</button>
+<button onclick="welcome.html">Play Another Game</button>
 </div>
+
 </body>
 </html>
