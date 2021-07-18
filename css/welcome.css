@@ -293,3 +293,14 @@ h2{
   position: relative;
   right: 18px;
 }
+
+#homepage-bot{
+  background-image: url("../imagesK/robot.png");
+  background-size: cover;
+  width:150px;
+  height:195px;
+  position:absolute;
+  top:100px;
+  left:30px;
+  transform: rotate(-10deg);
+}
