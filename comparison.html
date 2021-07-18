@@ -59,16 +59,18 @@
       var entry1 = document.getElementById("q1l").value;
       var entry2 = document.getElementById("q1g").value;
       var result= document.getElementById("q1result");
-      if(entry1>entry2)
+      if(entry1<entry2)
       {
          result.innerHTML="CORRECT ANSWER! You earn 10 chocolates!";
+         updateScore();
+         ele.innerHTML=score;
+
       }
       else
       {
          result.innerHTML="Wrong Answer :( It's okay you can try more!!";
       }
       return;
-
     }
   </script>
   <br>
