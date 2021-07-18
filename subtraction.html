@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="css/welcome.css">
+<link rel="shortcut icon" href="imagesK/favicon.png" type="image/png">
+<script src="js/welcome.js"></script>
+<script src ="jsK/script.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+<title>Subtraction</title>
+</head>
+<body>
+
+<div class="navbar" id='scorebtn'>
+  <a id="name"></a>
+  <a id="mini-icon"></a>
+  <a><img src="imagesK/chocolate3.png" width="37" height="28"></a>
+  <p id="score"></p>
+  <script>
+    document.querySelector("#name").innerHTML= localStorage.getItem("nickname");
+    var mini_icon = new Image(37,28);
+    mini_icon.src=iconChoice();
+    document.querySelector("#mini-icon").appendChild(mini_icon);
+    var ele = document.getElementById("score");
+    ele.innerHTML=score;
+    function checkS(){
+        var entry1 = document.getElementById("qs1").value;
+        var entry2 = document.getElementById("qs2").value;
+        var entry3 = document.getElementById("qs3").value;
+        var entry4 = document.getElementById("qs4").value;
+        var result= document.getElementById("result");
+        if(q1==3)
+        {
+            score+=10;
+            ele.innerHTML=score;
+        }
+        if(q2==1)
+        {
+            score+=10;
+            ele.innerHTML=score;
+        }
+        if(q3==2)
+        {
+            score+=10;
+            ele.innerHTML=score;
+        }
+        if(q4==1)
+        {
+            score+=10;;
+            ele.innerHTML=score;
+        }
+        result.innerHTML="The correct answers are 3, 1, 2 and 1!!"
+  }
+  </script>
+</div>
+<div class="main">
+    <h1><big><b>SUBTRACTION!!</b></big></h1>
+    <p>Let's learn subtraction of numbers!</p>
+
+
+<p id="intro">Subtraction can be visualized as 'removing' a quantity from another quantity. A number's value is 
+    taken away from the other number, and the answer is what is left of that number. The sign 
+    for subtraction is - (minus). This is one of the four arithmetic operations.</p>
+
+
+
+
+
+  
+<p>Do you want to earn more chocolates <img src="imagesK/chocolate3.png" width="30" height="20">? Take this quiz!!</p>
+<br><br>
+Enter the sum of the cherries in the box and click submit!!
+<br><br><br>
+<img src="imagesK/subPic.jpg">
+<form name="Subtraction Quiz">
+  
+  <input type="text" id="qs1" name="q1">
+  <input type="text" id="qs2" name="q2">
+  <input type="text" id="qs3" name="q3">
+  <input type="text" id="qs4" name="q4">
+  <div id="submit-button" onclick="checkS()">Submit</div>
+  <!-- <input type="submit" id="q1submit" value="Submit" onclick="checkQ()"> -->
+</form> 
+<p id="result"></p>
+
+
+
+</div>
+
+<br> <br>
+
+<button onclick="comparison.html">New Game</button>
+<button onclick="indexk.html">Quit</button>
+<button onclick="welcome.html">Play Another Game</button>
+</div>
+
+</body>
+</html>

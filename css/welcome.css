@@ -129,3 +129,69 @@ body {
   #submit-button:hover{
     box-shadow: 0 0 10px red;
   }
+
+  #q1
+{
+    position:relative;
+    bottom: 440px;
+    left:350px;
+    width:30px;
+}
+#q2
+{
+    position:relative;
+    bottom: 320px;
+    left:305px;
+    width:30px;
+}
+
+#q3
+{
+    position:relative;
+    bottom: 200px;
+    left:260px;
+    width:30px;
+}
+
+
+#q4
+{
+    position:relative;
+    bottom: 80px;
+    left:215px;
+    width:30px;
+}
+#qs1
+{
+    position:relative;
+    bottom: 330px;
+    left:310px;
+    width:30px;
+}
+#qs2
+{
+    position:relative;
+    bottom: 240px;
+    left:265px;
+    width:30px;
+}
+
+#qs3
+{
+    position:relative;
+    bottom: 140px;
+    left:220px;
+    width:30px;
+}
+
+
+#qs4
+{
+    position:relative;
+    bottom: 50px;
+    left:175px;
+    width:30px;
+}
+
+
+
