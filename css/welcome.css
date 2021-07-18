@@ -14,11 +14,12 @@ body {
   
   .navbar {
     overflow: hidden;
-    background-color: rgb(199, 84, 199);
+    background-color: rgb(90, 201, 245);
     position: fixed;
     top: 0;
     width: 100%;
     text-align: right;
+    z-index:20;
   }
   
   .navbar a {
