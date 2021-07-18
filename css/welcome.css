@@ -305,3 +305,18 @@ h2{
   left:30px;
   transform: rotate(-10deg);
 }
+#nav-buttons button{
+  margin-top:30px;
+  margin-bottom:20px;
+  font-size:20px;
+  margin-right:10px;
+}
+#nav-buttons button:hover{
+  box-shadow: 0 0 10px red;
+
+}
+.move{
+  position:relative;
+  left:520px;
+  bottom:100px;
+}
