@@ -3,6 +3,7 @@
 function fillForm(){
     var nickname = document.querySelector('#nameField').value;
     var age= document.querySelector('#ageField').value;
+    localStorage.setItem("score",0);
     localStorage.setItem("nickname",nickname);
     localStorage.setItem("age",age);
     return;

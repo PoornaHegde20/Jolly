@@ -144,6 +144,8 @@ h1{
     top:241px;
 }
 
+
+
 #counting{
     background-image:url("../imagesK/counting1.png");
     background-size:cover;
@@ -161,6 +163,31 @@ h1{
 
 #comparison:hover{
     box-shadow: 0 0 20px rgb(228, 63, 243);
+
+}
+
+#addition{
+    background-image:url("../imagesK/addition\ \(1\).png");
+    background-size:cover;
+
+}
+#addition:hover{
+    box-shadow: 0 0 20px rgb(228, 63, 243);
+
+}
+
+#subtraction{
+    background-image:url("../imagesK/subtract.png");
+    background-size:cover;
+
+}
+#subtraction:hover{
+    box-shadow: 0 0 20px rgb(63, 171, 243);
+
+}
+
+#counting:hover{
+    box-shadow: 0 0 20px rgb(63, 171, 243);
 
 }
 
