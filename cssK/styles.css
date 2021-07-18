@@ -22,32 +22,32 @@ h1{
 }
 
 #yellow{
-    background-image: url("../images/yellow.png");
+    background-image: url("../imagesK/yellow.png");
     background-size:cover;
     width:216px;
     height:162px;  
 }
 #blue{
-    background-image: url("../images/blue.png");
+    background-image: url("../imagesK/blue.png");
     background-size:cover;
     width:216px;
     height:162px;   
     
 }
 #red{
-    background-image: url("../images/red.png");
+    background-image: url("../imagesK/red.png");
     background-size:cover;
     width:216px;
     height:162px;    
 }
 #grey{
-    background-image: url("../images/grey.png");  
+    background-image: url("../imagesK/grey.png");  
     background-size:cover;
     width:216px;
     height:162px;  
 }
 #green{
-    background-image: url("../images/green.png"); 
+    background-image: url("../imagesK/green.png"); 
     background-size:cover;
     width:216px;
     height:162px;   
