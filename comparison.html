@@ -50,26 +50,29 @@
     <input type="button" id="q1Get" name="q1Get" value="Get Numbers" onclick="comparisonQ()"><br>
     <input type="text" id="q1g" name="q1g">
     <input type="text" id="q1l" name="q1l"><br>
-    <input type="submit" id="q1submit" value="Submit" onclick="checkQ()">
+    <input type="button" id="q1submit" value="Submit" onclick="checkQ()">
   </form> 
   <p id="q1result"></p>
   <script>
-    var result=document.getElementById("q1result");
-    var max;
-    if(parseInt(document.getElementById("q1n1").value)>parseInt(document.getElementById("q1n2").value))
-        max.value=parseInt(document.getElementById("q1n1").value);
-    else
-        max.value=parseInt(document.getElementById("q1n2").value);
-    if(parseInt(document.getElementById("q1g").value)==max.value)
+    function checkQ()
     {
+      var result=document.getElementById("q1result");
+      var max;
+      if(parseInt(document.getElementById("q1n1").value)>parseInt(document.getElementById("q1n2").value))
+        max.value=parseInt(document.getElementById("q1n1").value);
+      else
+        max.value=parseInt(document.getElementById("q1n2").value);
+      if(parseInt(document.getElementById("q1g").value)==max.value)
+      {
         result.innerHTML="CORRECT ANSWER! You earn 10 chocolates!";
         alert("Yes");
         updateScore();
-    }
-    else
-    {
+      }
+      else
+      {
         result.innerHTML="Wrong Answer :( It's okay you can try more!!";
-    }
+      }
+    }    
   </script>
   <br>
 <img src="img/playground.png" height="300" width="300">          
