@@ -22,38 +22,39 @@
   <a id="mini-icon"></a>
   <a><img src="imagesK/chocolate3.png" width="37" height="28"></a>
   <p id="score"></p>
+  <div id="homepage-bot"></div>
   <script>
     document.querySelector("#name").innerHTML= localStorage.getItem("nickname");
-    var mini_icon = new Image(37,28);
-    mini_icon.src=iconChoice();
-    document.querySelector("#mini-icon").appendChild(mini_icon);
-    var ele = document.getElementById("score");
-    ele.innerHTML=score;
+      var mini_icon = new Image(37,28);
+      mini_icon.src=iconChoice();
+      document.querySelector("#mini-icon").appendChild(mini_icon);
+      var ele = document.getElementById("score");
+      ele.innerHTML=localStorage.getItem("score");
     function checkA(){
         var entry1 = document.getElementById("q1").value;
         var entry2 = document.getElementById("q2").value;
         var entry3 = document.getElementById("q3").value;
         var entry4 = document.getElementById("q4").value;
         var result= document.getElementById("result");
-        if(q1==4)
+        if(entry1==4)
         {
-            score+=10;
-            ele.innerHTML=score;
+            updateScore();
+            ele.innerHTML=localStorage.getItem("score");
         }
-        if(q2==5)
+        if(entry2==5)
         {
-            score+=10;
-            ele.innerHTML=score;
+          updateScore();
+            ele.innerHTML=localStorage.getItem("score");
         }
-        if(q3==3)
+        if(entry3==3)
         {
-            score+=10;
-            ele.innerHTML=score;
+            updateScore();
+            ele.innerHTML=localStorage.getItem("score");
         }
-        if(q4==4)
+        if(entry4==4)
         {
-            score+=10;;
-            ele.innerHTML=score;
+            updateScore();
+            ele.innerHTML=localStorage.getItem("score");
         }
         result.innerHTML="The correct answers are 4, 5, 3 and 4!";
   }
@@ -74,7 +75,7 @@
 
   
 <p>Do you want to earn more chocolates <img src="imagesK/chocolate3.png" width="30" height="20">? Take this quiz!!</p>
-<br>,br>
+<br>
 Enter the sum of the cherries in the box and click submit!!
 <br><br><br>
 <img src="imagesK/addPic1.jpg">
@@ -95,7 +96,7 @@ Enter the sum of the cherries in the box and click submit!!
 
 <br> <br>
 
-<a href="final.html"><button onclick="final.html">Quit</button></a>
+<a href="final.html"><button >Quit</button></a>
 <a href="homepage.html"><button>Play Another Game</button></a>
 </div>
 

@@ -14,11 +14,12 @@ body {
   
   .navbar {
     overflow: hidden;
-    background-color: rgb(199, 84, 199);
+    background-color: rgb(90, 201, 245);
     position: fixed;
     top: 0;
     width: 100%;
     text-align: right;
+    z-index:20;
   }
   
   .navbar a {
@@ -292,4 +293,15 @@ h2{
 {
   position: relative;
   right: 18px;
+}
+
+#homepage-bot{
+  background-image: url("../imagesK/robot.png");
+  background-size: cover;
+  width:150px;
+  height:195px;
+  position:absolute;
+  top:100px;
+  left:30px;
+  transform: rotate(-10deg);
 }

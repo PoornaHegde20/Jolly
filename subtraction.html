@@ -22,38 +22,39 @@
   <a id="mini-icon"></a>
   <a><img src="imagesK/chocolate3.png" width="37" height="28"></a>
   <p id="score"></p>
+  <div id="homepage-bot"></div>
   <script>
     document.querySelector("#name").innerHTML= localStorage.getItem("nickname");
-    var mini_icon = new Image(37,28);
-    mini_icon.src=iconChoice();
-    document.querySelector("#mini-icon").appendChild(mini_icon);
-    var ele = document.getElementById("score");
-    ele.innerHTML=score;
+      var mini_icon = new Image(37,28);
+      mini_icon.src=iconChoice();
+      document.querySelector("#mini-icon").appendChild(mini_icon);
+      var ele = document.getElementById("score");
+      ele.innerHTML=localStorage.getItem("score");
     function checkS(){
         var entry1 = document.getElementById("qs1").value;
         var entry2 = document.getElementById("qs2").value;
         var entry3 = document.getElementById("qs3").value;
         var entry4 = document.getElementById("qs4").value;
         var results= document.getElementById("results");
-        if(q1==3)
+        if(entry1==3)
         {
-            score+=10;
-            ele.innerHTML=score;
+            updateScore();
+            ele.innerHTML=localStorage.getItem("score");
         }
-        if(q2==1)
+        if(entry2==1)
         {
-            score+=10;
-            ele.innerHTML=score;
+            updateScore();
+            ele.innerHTML=localStorage.getItem("score");
         }
-        if(q3==2)
+        if(entry3==2)
         {
-            score+=10;
-            ele.innerHTML=score;
+            updateScore();
+            ele.innerHTML=localStorage.getItem("score");
         }
-        if(q4==1)
+        if(entry4==1)
         {
-            score+=10;;
-            ele.innerHTML=score;
+            updateScore();
+            ele.innerHTML=localStorage.getItem("score");
         }
         results.innerHTML="The correct answers are 3, 1, 2 and 1!!";
   }
