@@ -143,7 +143,7 @@ function check10() {
 function updateScore()
 {
     var score=localStorage.getItem("score");
-    score+=10;
+    score= parseInt(score)+10;
     localStorage.setItem("score",score);
 }
 
