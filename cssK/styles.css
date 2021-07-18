@@ -149,8 +149,6 @@ h1{
     background-size:cover;
 }
 
-<<<<<<< HEAD
-=======
 #counting:hover{
     box-shadow: 0 0 20px rgb(63, 171, 243);
 
@@ -166,5 +164,28 @@ h1{
 
 }
 
+#congrats-display{
+    width:70%;
+    position:relative;
+    top:50px;
+    left:190px;
+    font-size:50px;
+}
 
->>>>>>> 84f186966a8bf641f2df0858da395101744dcf17
+#play-again{
+    color:black;
+    font-size:40px;
+    width:400px;
+    border:2px solid black;
+    border-radius:30px;
+    background-color:#70ceeb;
+    position:relative;
+    left:430px;
+    top:200px;
+    z-index:1000;
+}
+
+#play-again:hover{
+    box-shadow: 0 0 20px blueviolet;
+
+}
