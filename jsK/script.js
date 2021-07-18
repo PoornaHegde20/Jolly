@@ -8,6 +8,7 @@ function fillForm(){
 
 function characterChoice (x){
     localStorage.setItem("character",x);
+    displayChoice();
     return;
 }
 
@@ -16,3 +17,21 @@ function characterChoice (x){
 // 3 - green 
 // 4 - grey 
 // 5 - red 
+
+function displayChoice(){
+    var c=localStorage.getItem("character");
+    var colour;
+    if(c==1)
+        colour="YELLOW";
+    else if(c==2)
+        colour="BLUE";  
+    else if(c==3)
+        colour="GREEN"; 
+    else if(c==4)
+        colour="GREY";
+    else if(c==5)
+        colour="RED";
+
+    document.querySelector("#choice-display").innerHTML = "You have chosen "+colour+"!";
+    return;
+}
