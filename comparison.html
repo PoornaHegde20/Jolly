@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="comparison" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/welcome.css">
+<script src="js/welcome.js"></script>
+</head>
+<body>
+
+<div class="navbar" id='scorebtn'>
+  <a id="name"></a>
+  <a><img src="img/iconBlue.png" width="37" height="28"></a>
+  <a><img src="img/chocolate3.png" width="37" height="28"></a>
+  <p id="scoree"></p>
+  <script>
+    var ele=document.getElementById("scoree");
+    var eleee=document.getElementById("name");
+    eleee.innerHTML=username;
+    ele.innerHTML=score;
+  </script>
+</div>
+<div class="main">
+    <h1><big><b>COMPARISON</b></big></h1>
+    <p>Let's learn comparison of numbers!</p>
+
+
+<h2><u><b>GREATER THAN</b></u></h2>
+  A number is always greater than every number preceding it! Let's consider the number 5. 
+  The numbers preceding it are 4, 3, 2 and 1. That means, 5 is greater than all these numbers! 
+  The symbol for greater than is ">".
+  <br>Eg: 8>5, 4>1.
+
+
+<h2><u><b>LESSER THAN</b></u></h2>
+  A number is always lesser than the numbers succeeding it! Let's consider the number 5. 
+  The numbers succeeding it are 6, 7, 8, etc. That means, 5 is lesser than all these numbers! 
+  The symbol for lesser than is "<".<br>Eg:5<10, 1<3.
+
+  <p>You'll be higher on the seesaw if you're greater than the other number!!</p>
+  <img src="img/seesaw2.png" height="200" width="200">
+  <br>
+  <br>
+<p>Do you want to earn more chocolates <img src="img/chocolate3.png" width="30" height="20">? Take this quiz!!</p>
+<br>
+<p>Click on "Get Numbers" and enter these numbers on the seesaw!</p>
+
+  <form name="Comparison Quiz">
+    <input type="text" id="q1n1" name="q1n1">
+    <input type="text" id="q1n2" name="q1n2">
+    <input type="button" id="q1Get" name="q1Get" value="Get Numbers" onclick="comparisonQ()"><br>
+    <input type="text" id="q1g" name="q1g">
+    <input type="text" id="q1l" name="q1l"><br>
+    <input type="submit" id="q1submit" value="Submit" onclick="checkQ()">
+  </form> 
+  <p id="q1result"></p>
+  <script>
+    var result=document.getElementById("q1result");
+    var max;
+    if(parseInt(document.getElementById("q1n1").value)>parseInt(document.getElementById("q1n2").value))
+        max.value=parseInt(document.getElementById("q1n1").value);
+    else
+        max.value=parseInt(document.getElementById("q1n2").value);
+    if(parseInt(document.getElementById("q1g").value)==max.value)
+    {
+        result.innerHTML="CORRECT ANSWER! You earn 10 chocolates!";
+        alert("Yes");
+        updateScore();
+    }
+    else
+    {
+        result.innerHTML="Wrong Answer :( It's okay you can try more!!";
+    }
+  </script>
+  <br>
+<img src="img/playground.png" height="300" width="300">          
+<img src="img/playground.png" height="300" width="300">            
+<img src="img/playground.png" height="300" width="300">
+
+</div>
+
+<br> <br>
+<div id="next">
+  <a href="comparison.html">CONTINUE</a>
+</div>
+<br>
+<br>
+
+</div>
+</body>
+</html>
