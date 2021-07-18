@@ -135,7 +135,8 @@ function check10() {
     if(count10==3)
 	{
         changeColor10('chartreuse');
-        
+        updateScore();
+        displayScore();
     }
     count10++;
 }	
