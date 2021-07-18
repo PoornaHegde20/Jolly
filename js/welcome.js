@@ -4,12 +4,13 @@ var score=0;
 var username="kullu";
 var count1=1;
 var count2=1,count3=1,count4=1,count5=1,count6=1,count7=1,count8=1,count9=1,count10=1;
-		
+var snd = new Audio("D:/audioOne.mp3");
 function changeColor1(color) {
     document.getElementById('number1').style.backgroundColor = color;
 }
 			
 function check1() {
+    snd.play();
     if(count1==3)
 	{
         changeColor1('chartreuse');
