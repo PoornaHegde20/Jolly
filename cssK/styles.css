@@ -1,10 +1,20 @@
 body{
-    background: pink;
+    background-image: url("../imagesK/background1.jpg");
+      /* background-repeat: no-repeat;
+      /* background-attachment: fixed; */
+      background-size: cover; 
+      margin:0;
+      font-family: 'Otomanopee One', sans-serif;
+      background-attachment: fixed;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  
     text-align:center;
     font-family: 'Otomanopee One', sans-serif;
 }
 
 h1{
+    font-size: 60px;
     margin-top:60px;
 }
 
@@ -13,6 +23,7 @@ h1{
 }
 
 .form ul li{
+    font-size: 20px;
     margin:15px;
 }
 
@@ -56,7 +67,7 @@ h1{
 
 #next-button{
     color:black;
-    margin-top:30px;
+    margin-top:100px;
     margin-bottom: 20px;
     float:right;
     font-size:40px;
@@ -100,6 +111,9 @@ h1{
 }
 
 #intro{
+    width:70%;
+    position:relative;
+    left:13%;
     margin:30px;
     font-size:30px;
 }

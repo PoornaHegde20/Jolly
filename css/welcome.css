@@ -1,7 +1,14 @@
 body {
-      background-color: palevioletred;
+      background-image: url("../imagesK/background1.jpg");
+      /* background-repeat: no-repeat;
+      /* background-attachment: fixed; */
+      background-size: cover; 
       margin:0;
       font-family: 'Otomanopee One', sans-serif;
+      background-attachment: fixed;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  
       
   }
   
