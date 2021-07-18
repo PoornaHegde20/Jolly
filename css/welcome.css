@@ -1,76 +1,112 @@
 body {
-background-color: palevioletred;
-
-    margin:0;
-}
-
-.navbar {
-  overflow: hidden;
-  background-color: rgb(199, 84, 199);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  text-align: right;
-}
-
-.navbar a {
-  float: right;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 9px 11px;
-  text-decoration: none;
-  font-size: 19px;
-}
-
-.navbar a:hover {
-  background: rgb(235, 126, 159);
-  color: black;
-}
-
-.main {
-  padding: 16px;
-  margin-top: 30px;
-  height: 150px; /* Used in this example to enable scrolling */
-  text-align: center;
-}
-
-#test
-{
-  background-color: aqua;
-}
-
-.button {
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+  background-color: palevioletred;
+  
+      margin:0;
   }
   
-  .button1 {background-color: green;} /* Green */
-  .button2 {background-color: #008CBA;} /* Blue */
-  .button3 {background-color: #008CBA;width: 200;}
-  #numbers
-  {
-      text-align: center;
+  .navbar {
+    overflow: hidden;
+    background-color: rgb(199, 84, 199);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: right;
   }
-  #seesaw
-  {
-      text-align: center;
+  
+  .navbar a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 9px 11px;
+    text-decoration: none;
+    font-size: 19px;
   }
-  #great
-  {
-      text-align: center;
+  
+  .navbar a:hover {
+    background: rgb(235, 126, 159);
+    color: black;
   }
-  #next
-  {
+  
+  .main {
+    padding: 16px;
+    margin-top: 30px;
     text-align: center;
   }
+  
+  .button {
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    
+    .button1 {background-color: green;} /* Green */
+    .button2 {background-color: #008CBA;} /* Blue */
+    .button3 {background-color: #008CBA;width: 200;}
+    #numbers
+    {
+        text-align: center;
+    }
+    #seesaw
+    {
+        text-align: center;
+    }
+    #great
+    {
+        text-align: center;
+    }
+    #next
+    {
+      text-align: center
+    }
+    #q1l
+    {
+      position: relative;
+      bottom: 115px;
+      right: 110px;
+      width: 30px;
+    }
+    #q1g
+    {
+      position: relative;
+      bottom: 185px;
+      left: 90px;
+      width: 30px;
+    }
+    #q2l
+    {
+      position: relative;
+      bottom: 115px;
+      right: 110px;
+      width: 30px;
+    }
+    #q2g
+    {
+      position: relative;
+      bottom: 185px;
+      left: 90px;
+      width: 30px;
+    }
+    #q3l
+    {
+      position: relative;
+      bottom: 115px;
+      right: 110px;
+      width: 30px;
+    }
+    #q3g
+    {
+      position: relative;
+      bottom: 185px;
+      left: 90px;
+      width: 30px;
+    }
 
   #submit-button{
     position:relative;
