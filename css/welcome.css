@@ -31,13 +31,7 @@ background-color: palevioletred;
 .main {
   padding: 16px;
   margin-top: 30px;
-  height: 150px; /* Used in this example to enable scrolling */
   text-align: center;
-}
-
-#test
-{
-  background-color: aqua;
 }
 
 .button {
@@ -79,6 +73,34 @@ background-color: palevioletred;
     width: 30px;
   }
   #q1g
+  {
+    position: relative;
+    bottom: 185px;
+    left: 90px;
+    width: 30px;
+  }
+  #q2l
+  {
+    position: relative;
+    bottom: 115px;
+    right: 110px;
+    width: 30px;
+  }
+  #q2g
+  {
+    position: relative;
+    bottom: 185px;
+    left: 90px;
+    width: 30px;
+  }
+  #q3l
+  {
+    position: relative;
+    bottom: 115px;
+    right: 110px;
+    width: 30px;
+  }
+  #q3g
   {
     position: relative;
     bottom: 185px;

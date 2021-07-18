@@ -143,14 +143,32 @@ function updateScore()
     score+=10;
 }
 
-function comparisonQ()
+function comparisonQ(c)
 {
-    var x=document.getElementById("q1n1");
-    var y=document.getElementById("q1n2");
-    x.value=Math.ceil(Math.random()*10);
-    y.value=Math.ceil(Math.random()*10);
-    x.innerHTML="The numbers are " +x.value+" and "+y.value+"!";
-    // y.innerHTML=y.value;
+    if(c==1)
+    {
+        var x=document.getElementById("q1n1");
+        var y=document.getElementById("q1n2");
+        x.value=Math.ceil(Math.random()*10);
+        y.value=Math.ceil(Math.random()*10);
+        x.innerHTML="The numbers are " +x.value+" and "+y.value+"!";
+    }
+    else if(c==2)
+    {
+        var x=document.getElementById("q2n1");
+        var y=document.getElementById("q2n2");
+        x.value=Math.ceil(Math.random()*10);
+        y.value=Math.ceil(Math.random()*10);
+        x.innerHTML="The numbers are " +x.value+" and "+y.value+"!";
+    }
+    else
+    {
+        var x=document.getElementById("q3n1");
+        var y=document.getElementById("q3n2");
+        x.value=Math.ceil(Math.random()*10);
+        y.value=Math.ceil(Math.random()*10);
+        x.innerHTML="The numbers are " +x.value+" and "+y.value+"!";
+    }
 }
 function checkQ()
 {
