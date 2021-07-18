@@ -121,12 +121,47 @@ h1{
 #intro span{
     font-size:130%;
 }
-
+#game-buttons{
+    position:relative;
+    left:25%;
+}
 #game-buttons div{
     border: 2px black solid;
-    width:30%;
-    height:100px;
-    margin-left:10%;
-    margin-right:10%;
+    width:300px;
+    height:300px;
     margin-bottom: 30px;;
+    border-radius:20px;
 }
+
+
+#game-buttons div:nth-child(1){
+    margin-right:10px;
+}
+
+#game-buttons span{
+    z-index:2;
+    position:relative;
+    top:241px;
+}
+
+#counting{
+    background-image:url("../imagesK/counting1.png");
+    background-size:cover;
+}
+
+#counting:hover{
+    box-shadow: 0 0 20px rgb(63, 171, 243);
+
+}
+
+#comparison{
+    background-image:url("../imagesK/comparisonn.png");
+    background-size:cover;
+}
+
+#comparison:hover{
+    box-shadow: 0 0 20px rgb(228, 63, 243);
+
+}
+
+
