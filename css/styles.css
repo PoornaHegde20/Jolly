@@ -1,0 +1,72 @@
+body{
+    background: pink;
+    text-align:center;
+}
+
+h1{
+    margin-top:60px;
+}
+
+.form ul{
+    list-style-type: none;
+}
+
+.form ul li{
+    margin:15px;
+}
+
+#characters div:hover{
+    border-radius:50%;
+    box-shadow: 0 0 20px purple;
+    
+}
+
+#yellow{
+    background-image: url("../images/yellow.png");
+    background-size:cover;
+    width:216px;
+    height:162px;  
+}
+#blue{
+    background-image: url("../images/blue.png");
+    background-size:cover;
+    width:216px;
+    height:162px;   
+    
+}
+#red{
+    background-image: url("../images/red.png");
+    background-size:cover;
+    width:216px;
+    height:162px;    
+}
+#grey{
+    background-image: url("../images/grey.png");  
+    background-size:cover;
+    width:216px;
+    height:162px;  
+}
+#green{
+    background-image: url("../images/green.png"); 
+    background-size:cover;
+    width:216px;
+    height:162px;   
+}
+
+#next-button{
+    color:black;
+    margin-top:30px;
+    margin-bottom: 20px;
+    float:right;
+    font-size:40px;
+    width:180px;
+    border:2px solid black;
+    border-radius:30px;
+    clear:both;
+    background-color:#70ceeb;
+}
+
+#next-button:hover{
+    box-shadow: 0 0 20px blueviolet;
+    
+}
