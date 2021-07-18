@@ -27,7 +27,7 @@
       mini_icon.src=iconChoice();
       document.querySelector("#mini-icon").appendChild(mini_icon);
       var ele = document.getElementById("score");
-      ele.innerHTML=score;
+      ele.innerHTML=localStorage.getItem("score");
     </script>
   </div>
 <div id="margined">
@@ -60,8 +60,7 @@ TEN<br>
 </div>
 <script>
   function displayScore(){
-    ele.innerHTML=score;
-
+    ele.innerHTML=localStorage.getItem("score");
   }
 </script>
 

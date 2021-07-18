@@ -28,7 +28,7 @@
     mini_icon.src=iconChoice();
     document.querySelector("#mini-icon").appendChild(mini_icon);
     var ele = document.getElementById("score");
-    ele.innerHTML=score;
+    ele.innerHTML=localStorage.getItem("score");
   </script>
 </div>
 <div class="main">
@@ -107,7 +107,7 @@ Question-3
       {
        result.innerHTML="CORRECT ANSWER! You earn 10 chocolates!";
        updateScore();
-       ele.innerHTML=score;
+       ele.innerHTML=localStorage.getItem("score");
       }
       else
       {
@@ -124,7 +124,7 @@ Question-3
       {
        result.innerHTML="CORRECT ANSWER! You earn 10 chocolates!";
        updateScore();
-       ele.innerHTML=score;
+       ele.innerHTML=localStorage.getItem("score");
       }
       else
       {
@@ -141,7 +141,7 @@ Question-3
       {
        result.innerHTML="CORRECT ANSWER! You earn 10 chocolates!";
        updateScore();
-       ele.innerHTML=score;
+       ele.innerHTML=localStorage.getItem("score");
       }
       else
       {

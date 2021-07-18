@@ -1,6 +1,5 @@
 var age;
 var icon;
-var score=0;
 var username="kullu";
 var ele=document.getElementById("scoree");
 var count1=1,count2=1,count3=1,count4=1,count5=1,count6=1,count7=1,count8=1,count9=1,count10=1;
@@ -143,7 +142,9 @@ function check10() {
 
 function updateScore()
 {
+    var score=localStorage.getItem("score");
     score+=10;
+    localStorage.setItem("score",score);
 }
 
 function comparisonQ(c)
