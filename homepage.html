@@ -18,26 +18,49 @@
 
   </head>
   <body>
-    Hello <span id="name"></span>
-    <br>
-    You are <span id="age"></span> years old!
-    <br>
-    character choice - <span id="character"></span>
-    <br>
+    <div class="container">
+      <div class="row">
+        <div id="greeting" class="col-sm-12">
+          Hi there <span id="name"></span>! :)
+        </div>
+        <div id="icon-display" class="col-sm-12">
+
+        </div>
+      </div>
+    </div>
+    
+    <div id="homepage-bot"></div>
+
+
+
+
+
+
+
+
+
+
+
+
     <script>
       document.querySelector('#name').innerHTML = localStorage.getItem("nickname");
-      document.querySelector('#age').innerHTML = localStorage.getItem("age");
-      var c = localStorage.getItem("character");
-      if(c==1)
-        document.querySelector('#character').innerHTML = "Yellow!";
-      else if(c==2)
-        document.querySelector('#character').innerHTML = "Blue!";
-      else if(c==3)
-        document.querySelector('#character').innerHTML = "Green!";
-      else if(c==4)
-        document.querySelector('#character').innerHTML = "Grey!";
-      else if(c==5)
-        document.querySelector('#character').innerHTML = "Red!";
+      // document.querySelector('#age').innerHTML = localStorage.getItem("age");
+      // var c = localStorage.getItem("character");
+      // if(c==1)
+      //   document.querySelector('#character').innerHTML = "Yellow!";
+      // else if(c==2)
+      //   document.querySelector('#character').innerHTML = "Blue!";
+      // else if(c==3)
+      //   document.querySelector('#character').innerHTML = "Green!";
+      // else if(c==4)
+      //   document.querySelector('#character').innerHTML = "Grey!";
+      // else if(c==5)
+      //   document.querySelector('#character').innerHTML = "Red!";
+
+      var icon = new Image(360,270);
+      icon.src = iconChoice();
+      document.querySelector("#icon-display").appendChild(icon);
+
     </script>
     
   </body>
